@@ -29,7 +29,7 @@ export const AppShell: React.FunctionComponent<{
   const { movies } = useStore();
   return (
     <BrowserRouter>
-      <h5>{movies.length} selected</h5>
+      <h5>Cloud Module Federation - {title}</h5>
       <Routes>
         {routes.map((route) => (
           <Route

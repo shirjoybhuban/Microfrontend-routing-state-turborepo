@@ -4,11 +4,11 @@ import { AppShell } from "ui";
 function App() {
   return (
     <AppShell
-      title="Service Host"
+      title="Service Remote One"
       routes={[
         {
           path: "/",
-          element: () => <div>Host</div>,
+          element: () => <div>Remote One Host</div>,
         },
         {
           path: "/remote",
