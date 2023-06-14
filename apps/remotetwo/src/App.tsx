@@ -3,8 +3,11 @@ import { AppShell } from "ui";
 // import Button from "./remotetwo";
 //@ts-ignore
 import Button from "remoteone/Button";
+import { useStore } from "store";
 
 function App() {
+  const { movies } = useStore();
+
   return (
     <AppShell
       title="Service Remote Two"
@@ -13,7 +16,7 @@ function App() {
           path: "/",
           element: () => (
             <div>
-              <h1>Remote Two Host </h1>
+              <h1>Remote Two Host : total= {movies.length}</h1>
               <Button />
             </div>
           ),
