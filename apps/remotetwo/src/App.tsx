@@ -1,27 +1,20 @@
 import React from "react";
 import { AppShell } from "ui";
+// import Button from "./remotetwo";
 //@ts-ignore
-
-import Card from "remotetwo/Card";
+import Button from "remoteone/Button";
 
 function App() {
   return (
     <AppShell
-      title="Service Host"
+      title="Service Remote Two"
       routes={[
         {
           path: "/",
           element: () => (
             <div>
-              <h1>Host</h1>
-              <div
-                style={{
-                  width: "500px",
-                }}
-              >
-                {" "}
-                <Card />
-              </div>
+              <h1>Remote Two Host </h1>
+              <Button />
             </div>
           ),
         },

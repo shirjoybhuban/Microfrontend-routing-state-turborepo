@@ -14,7 +14,7 @@ module.exports = () => ({
         new ModuleFederationPlugin({
           name: "movies",
           filename: "remoteEntry.js",
-          remotes: {},
+          remotes: { remotetwo: "remotetwo@http://localhost:3002/remoteEntry.js" },
           exposes: {},
           shared: {
             ...deps,

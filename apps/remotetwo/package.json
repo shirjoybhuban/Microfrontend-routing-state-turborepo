@@ -1,5 +1,5 @@
 {
-  "name": "remoteone",
+  "name": "remotetwo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "PORT=3001 craco start",
+    "dev": "PORT=3002 craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject"

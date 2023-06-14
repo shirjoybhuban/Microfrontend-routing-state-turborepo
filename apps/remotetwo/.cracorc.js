@@ -12,14 +12,14 @@ module.exports = () => ({
     plugins: {
       add: [
         new ModuleFederationPlugin({
-          name: "remoteone",
+          name: "remotetwo",
           filename: "remoteEntry.js",
           remotes: {
-            remotetwo: "remotetwo@http://localhost:3002/remoteEntry.js",
+            remoteone: "remoteone@http://localhost:3001/remoteEntry.js",
             movies: "movies@http://localhost:3000/remoteEntry.js",
           },
           exposes: {
-            './Button': './src/components/Button.tsx'
+            './Card': './src/components/Card/Card.tsx'
           },
           shared: {
             ...deps,
